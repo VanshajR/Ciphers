@@ -19,8 +19,8 @@ elif app_mode == "NeuralCipher":
     Vocab_size = len(CHARSET)
 
     # Model file paths
-    ENCRYPT_MODEL_PATH = "encrypt_model.h5"
-    DECRYPT_MODEL_PATH = "decrypt_model.h5"
+    ENCRYPT_MODEL_PATH = os.path.join(os.getcwd(), "encrypt_model.h5")
+    DECRYPT_MODEL_PATH = os.path.join(os.getcwd(), "decrypt_model.h5")
 
     # Load trained models
     def load_models():
