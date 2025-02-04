@@ -4,6 +4,7 @@ import numpy as np
 import string
 import os
 
+st.set_page_config(page_title="Cipher Suite", page_icon="🔒", layout="centered", initial_sidebar_state="auto")
 st.sidebar.title("Cipher Suite")
 app_mode = st.sidebar.selectbox("Choose Cipher", ["ReVig Cipher", "NeuralCipher"])
 
